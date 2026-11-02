@@ -1,0 +1,18 @@
+// good_script.tb
+let backup_dir: Path = "./backups"
+let target_host: string = "backup-server"
+
+fn notify(msg: string) {
+    print(msg)
+}
+
+notify("Starting automated backup process...")
+
+let files: Array<string> = ["config.json", "database.sql", "assets.tar.gz"]
+
+for file in files {
+    print(file)
+}
+
+exec "mkdir -p ./backups"
+exec "echo 'All files synchronized successfully'"
