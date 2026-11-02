@@ -12,11 +12,11 @@ TypeBash transforms vulnerable, error-prone shell scripts into safe, robust, and
 
 ## ⚡ Key Features
 
-* 🦀 **Rust-like Diagnostics:** Human-readable compiler errors with strict codes (`E100`-`E400`), exact line highlights, and helpful hints [INDEX].
+* 🛡️ **Types and Safety** Our compiler ensures safety through types.
 * 🛡️ **DevOps Shield:** Automatically verifies whether invoked system utilities (like `docker`, `git`, `curl`) exist in your host `PATH` during compilation [INDEX].
 * 📐 **Strict Typing & Scoping:** Full support for `string`, `number`, `boolean`, generic arrays (`Array<T>`), and an intelligent path-validation type (`Path`) [INDEX].
 * 🔒 **Secure Bash Output:** Automatically generates production-ready `.sh` files configured with `set -euo pipefail` and a native runtime error handler (`trap ERR`) [INDEX].
-
+* 🌐 **Secure Bash Output:** Fully compatible with your existing code; our compiler translates into .sh files.
 ---
 
 ## 💻 Code Example
@@ -41,30 +41,14 @@ for file in targetFiles {
 exec "mkdir -p ./backups"
 ```
 
-Compile it with a single command:
-```bash
-typebash build script.tb
-```
+### Attention
 
-### 📦 Optimized Output (`script.sh`)
-
-Your code is automatically compiled into professional shell script formatting [INDEX]:
-* All local/global scopes are handled correctly with `local` variables [INDEX].
-* Normal variables are forced into `readonly` state to prevent unexpected tampering [INDEX].
-* Automatic conversion of variables into shell-compliant `UPPERCASE` [INDEX].
+The compiler was written by an AI, but I oversee everything to ensure it’s safe and convenient for you; I conceived the entire project myself.
 
 ---
 
-## 🚀 Quick Start
-
-1. **Clone the repository and build the release binary:**
-   ```bash
-   cargo build --release
-   ```
-2. **Run compilation checks and generate code:**
-   ```bash
-   ./target/release/typebash build your_script.tb
-   ```
+## 🚀 Help us create safety!!!
+We strive to maintain security, but we welcome your help; we are always glad to see your contributions to our project—thank you!
 
 ## 📜 License
 Distributed under the **MIT License**. See `LICENSE` for more information [INDEX].
