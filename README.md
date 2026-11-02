@@ -2,7 +2,7 @@
 
 <img width="280" height="282" alt="download" src="https://github.com/user-attachments/assets/c77f611e-50ac-4598-8894-43f390be479a" />
 
-![License](https://github.com/Belling-Studio/TypeBash/blob/main/LICENSE) ![Version](https://shields.io) ![Built with Rust](https://shields.io)
+![License](https://github.com/Belling-Studio/TypeBash/blob/main/LICENSE) ![Built with Rust](https://shields.io)
 
 A Rust-powered static type checker and compiler that brings strict typing and safety features to Bash scripts [INDEX].
 
