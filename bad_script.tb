@@ -1,8 +1,0 @@
-// bad_script.tb
-let message: string = "Инициализация серверов..."
-print(message)
-
-// ОШИБКА ЗДЕСЬ: Массив объявлен как string, но третий элемент — число!
-let nodes: Array<string> = ["prod-01", "prod-02", 500] 
-
-exec "echo 'Deploying to nodes...'"
